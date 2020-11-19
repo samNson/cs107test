@@ -4,7 +4,41 @@
 ## CMake
 [CMake] (https://cliutils.gitlab.io/modern-cmake/chapters/intro/installing.html) is a cross-platform free and open-source software tool for managing the build process of software using a compiler-independent method. It supports directory hierarchies and applications that depend on multiple libraries.
 
-[I'm an inline-style link](https://www.google.com)
+Depenedencies:
+
+
+#### How do you envision that a user will interact with your package? What should they import? How can they instantiate AD objects?
+
+A user can include a single API header file to `NoetherAutoDiff.h` while linking to either the raw source files or linking to a compiled binary for the library.
+
+Here is an example of the usage.
+```
+    const char* input = "sin(x)^cos(x-5/3+4^x*y/z)/tan(3*x)+exp(3*x-1)";
+    map<char, double> inits = {{'x', 1.4}, {'y', 2.4}, {'z', 3.4}  };
+    map<char, double> seeds = {{'x', 1}, {'y', 1}, {'z', 1} };
+    int mode = 0;   // use mode = 0 for forward mode autodiff 
+                    //     mode = 1 for reverse mode autodiff
+
+    NoetherAutoDiff n = NoetherAutoDiff(input, 0, inits, seeds);
+    n.print();
+```
+
+The *print* will output the follow:
+```
+    Evaluated at: 
+    x=1.4  y=2.4  z=3.4  
+    Numeric Value:
+    f = 28.2899
+    Derivatives: 
+    df/dx = 78.4032
+    df/dy = 0.154979
+    df/dz = -0.109397
+```
+
+
+A user will specify an input function as a string and pass that into the library along with the values at which to calculate the derivative, an seed vector will be optional. 
+
+
 
 [![Build Status](https://travis-ci.com/samNson/cs107test.svg?branch=main)](https://travis-ci.com/samNson/cs107test)
 
