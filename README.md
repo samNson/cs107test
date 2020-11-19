@@ -35,6 +35,8 @@ The *print* will output the follow:
     df/dz = -0.109397
 ```
 
+## Dependencies
+
 ## Download and Buile Instructions  
 The *NoetherAutoDiff* library can be downloaded from the group github repo as follows:  
 ```git clone https://github.com/cs107-noether/cs107-FinalProject.git```
