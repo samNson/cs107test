@@ -41,7 +41,7 @@ The *NoetherAutoDiff* library can be downloaded from the group github repo as fo
 
 Once downloaded, follow these steps to configure and be able to use the library:
 - ```cd cs107-FinalProject``` to get in to NoetherAutoDiff library directory
-- Build the libray source code using provided CMakeLists.txt file as follows:
+- Build the libray source code using provided CMakeLists.txt file as follows:  
      ```./build.sh```
 - Install
 
