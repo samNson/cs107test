@@ -2,8 +2,9 @@
 
 
 ## CMake
-[![CMake] (https://cliutils.gitlab.io/modern-cmake/chapters/intro/installing.html)] is a cross-platform free and open-source software tool for managing the build process of software using a compiler-independent method. It supports directory hierarchies and applications that depend on multiple libraries.
+[CMake] (https://cliutils.gitlab.io/modern-cmake/chapters/intro/installing.html) is a cross-platform free and open-source software tool for managing the build process of software using a compiler-independent method. It supports directory hierarchies and applications that depend on multiple libraries.
 
+[I'm an inline-style link](https://www.google.com)
 
 [![Build Status](https://travis-ci.com/samNson/cs107test.svg?branch=main)](https://travis-ci.com/samNson/cs107test)
 
