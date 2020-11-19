@@ -35,6 +35,18 @@ The *print* will output the follow:
     df/dz = -0.109397
 ```
 
+## Instructions to Access NoetherAutoDiff
+The *NoetherAutoDiff* library can be downloaded from the group github repo as follows:
+```git clone https://github.com/cs107-noether/cs107-FinalProject.git```
+
+Once downloaded, follow these steps to configure and be able to use the library:
+- ```cd cs107-FinalProject``` to get in to NoetherAutoDiff library directory
+- Build the libray source code using provided CMakeLists.txt file as follows:
+     ```./build.sh```
+- Install
+
+
+
 
 A user will specify an input function as a string and pass that into the library along with the values at which to calculate the derivative, an seed vector will be optional. 
 
