@@ -35,15 +35,19 @@ The *print* will output the follow:
     df/dz = -0.109397
 ```
 
-## Instructions to Access NoetherAutoDiff
-The *NoetherAutoDiff* library can be downloaded from the group github repo as follows:
+## Download and Buile Instructions  
+The *NoetherAutoDiff* library can be downloaded from the group github repo as follows:  
 ```git clone https://github.com/cs107-noether/cs107-FinalProject.git```
 
 Once downloaded, follow these steps to configure and be able to use the library:
-- ```cd cs107-FinalProject``` to get in to NoetherAutoDiff library directory
-- Build the libray source code using provided CMakeLists.txt file as follows:  
+- From the command line, navigate into the NoetherAutoDiff library directory as follows  
+    ```cd cs107-FinalProject``` 
+- Build the libray source code using the provided build script as follows:  
      ```./build.sh```
-- Install
+- This will install the following dependencies onto your machine and also build the NoeitherAutoDiff
+source code. 
+
+
 
 
 
